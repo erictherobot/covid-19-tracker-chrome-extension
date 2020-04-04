@@ -1,8 +1,14 @@
 # COVID-19 Tracker - Chrome Extension
 
-<img src="https://lh3.googleusercontent.com/p01qcmbw5xf_FkGB_i7ggbzvngbkYP_AIxKWrJNkJZ__MAnPUDtIjGF_S4Uny69VgQhLW7AlEGk=w640-h400-e365" alt="COVID-19 Tracker - Chrome Extension by Colorful Dots, LLC" width="100%">
+<a href="https://chrome.google.com/webstore/detail/covid-19-tracker/depafjpccjhffpkhikmhiklhhgocfldk"><img src="https://lh3.googleusercontent.com/p01qcmbw5xf_FkGB_i7ggbzvngbkYP_AIxKWrJNkJZ__MAnPUDtIjGF_S4Uny69VgQhLW7AlEGk=w640-h400-e365" alt="COVID-19 Tracker - Chrome Extension by Colorful Dots, LLC" width="100%"></a>
 
-A simple chrome extension that calls an API to retrieve COVID-19 global statistics.
+A simple chrome extension that calls an API to retrieve COVID-19 global statistics. 
+
+### Get It
+
+<a href="https://chrome.google.com/webstore/detail/covid-19-tracker/depafjpccjhffpkhikmhiklhhgocfldk">Get Chrome Extension</a>
+
+### Credits
 
 Made by [Eric David Smith](https://ericdavidsmith.com) at [Colorful Dots, LLC](https://colorfuldots.com) using [Svelte](https://svelte.dev)
 
