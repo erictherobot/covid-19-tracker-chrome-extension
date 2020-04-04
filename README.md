@@ -1,8 +1,10 @@
-# COVID-19 Chrome Extension
+# COVID-19 Tracker - Chrome Extension
+
+![COVID-19 Tracker - Chrome Extension by Colorful Dots, LLC](https://lh3.googleusercontent.com/p01qcmbw5xf_FkGB_i7ggbzvngbkYP_AIxKWrJNkJZ__MAnPUDtIjGF_S4Uny69VgQhLW7AlEGk=w640-h400-e365)
 
 A simple chrome extension that calls an API to retrieve COVID-19 global statistics.
 
-Made by Eric David Smith at https://colorfuldots.com using Svelte - https://svelte.dev
+Made by [Eric David Smith](https://ericdavidsmith.com) at [Colorful Dots, LLC](https://colorfuldots.com) using [Svelte](https://svelte.dev)
 
 ### MIT License
 
