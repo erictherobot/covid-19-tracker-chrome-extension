@@ -1,6 +1,6 @@
 # COVID-19 Tracker - Chrome Extension
 
-![COVID-19 Tracker - Chrome Extension by Colorful Dots, LLC](https://lh3.googleusercontent.com/p01qcmbw5xf_FkGB_i7ggbzvngbkYP_AIxKWrJNkJZ__MAnPUDtIjGF_S4Uny69VgQhLW7AlEGk=w640-h400-e365)
+<img src="https://lh3.googleusercontent.com/p01qcmbw5xf_FkGB_i7ggbzvngbkYP_AIxKWrJNkJZ__MAnPUDtIjGF_S4Uny69VgQhLW7AlEGk=w640-h400-e365" alt="COVID-19 Tracker - Chrome Extension by Colorful Dots, LLC" width="100%">
 
 A simple chrome extension that calls an API to retrieve COVID-19 global statistics.
 
