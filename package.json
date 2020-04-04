@@ -1,6 +1,6 @@
 {
   "name": "covid-19-tracker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple chrome extension that calls an API to retrieve COVID-19 global statistics.",
   "scripts": {
     "build": "node utils/build.js",
