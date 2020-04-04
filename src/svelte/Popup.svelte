@@ -22,9 +22,10 @@
   }
   .list {
     padding: 10px;
-    background-color: rgb(248, 219, 239);
-    margin: 0 auto 20px auto;
-    min-width: 400px;
+    background-color: #fff1fb;
+    border: 1px dotted #f6f;
+    margin: 10px auto 10px auto;
+    min-width: 300px;
     border-radius: 4px;
   }
   ul {
@@ -32,14 +33,20 @@
     padding: 0;
     margin: 0;
   }
+  h1 {
+    margin: 0 auto 0;
+    padding: 0;
+    font-size: 1.2rem;
+  }
   h3 {
-    margin: 0px auto 5px;
+    margin: 0 auto 5px;
     padding: 0;
   }
-  p {
+  .spinner-wrapper {
     padding: 10px;
     margin: 0 auto 20px auto;
-    min-width: 400px;
+    min-width: 300px;
+    text-align: center;
   }
   .spinner:before {
     content: '';
@@ -47,30 +54,44 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 25px;
-    height: 25px;
-    margin-top: -10px;
-    margin-left: -10px;
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    margin-left: -15px;
+    margin-bottom: 10px;
     border-radius: 50%;
     border: 4px solid #f6f;
     border-top-color: #0e0;
     border-right-color: #0dd;
     border-bottom-color: #f90;
-    animation: spinner 0.6s linear infinite;
+    animation: spinner 0.5s linear infinite;
   }
   .spinner {
     position: relative;
     min-height: 36px;
     background: #fff;
-    margin: 10px 20px 0 0;
+    margin: 10px 0 0 0;
   }
   img {
-    width: 25px;
+    width: 45px;
     vertical-align: middle;
   }
   a {
-    color: #333;
+    color: #f6f;
     text-decoration: underline;
+    font-size: 15px;
+  }
+  hr {
+    background: linear-gradient(to right, #f6f, #0dd);
+    height: 4px;
+    border: 0;
+  }
+  footer {
+    text-align: center;
+  }
+  footer p {
+    font-size: 14px;
+    color: #656565;
   }
   @keyframes spinner {
     to {
@@ -79,39 +100,58 @@
   }
 </style>
 
-<h3>COVID-19 Updates</h3>
+<h1>Global COVID-19 Updates</h1>
+<hr />
 
 {#await fetchData}
-  <p>
+  <div class="spinner-wrapper">
     <span class="spinner" />
-    ...fetching COVID-19 updates
-  </p>
+  </div>
 {:then data}
   {#each data.response as { country, cases, deaths }, i}
     <div class="list">
       <h3>{country}</h3>
       <ul>
-        <li>New: {cases.new}</li>
-        <li>Active: {cases.active}</li>
-        <li>Critical: {cases.critical}</li>
-        <li>Recovered: {cases.recovered}</li>
-        <li>Recent Deaths: {deaths.new}</li>
-        <li>Total Deaths: {deaths.total}</li>
+        <li>
+          <strong>New:</strong>
+          {cases.new}
+        </li>
+        <li>
+          <strong>Active:</strong>
+          {cases.active}
+        </li>
+        <li>
+          <strong>Critical:</strong>
+          {cases.critical}
+        </li>
+        <li>
+          <strong>Recovered:</strong>
+          {cases.recovered}
+        </li>
+        <li>
+          <strong>Recent Deaths:</strong>
+          {deaths.new}
+        </li>
+        <li>
+          <strong>Total Deaths:</strong>
+          {deaths.total}
+        </li>
       </ul>
     </div>
+    <hr />
   {/each}
 {:catch error}
   <p>An error occurred!</p>
 {/await}
 <footer>
   <p>
-    Made by
     <a href="https://colorfuldots.com" target="_blank">
       <img
         src="https://svelte-firestore-todos.erictherobot.now.sh/colorful-dots-llc.png"
         alt="Colorful Dots, LLC" />
     </a>
-    using
-    <a href="https://svelte.dev" target="_blank">Svelte</a>
+    <br />
+    <br />
+    &copy;2020 Colorful Dots, LLC
   </p>
 </footer>
